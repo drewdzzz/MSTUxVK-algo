@@ -85,6 +85,7 @@ basic_test()
     std::cout << std::endl;
 }
 
+/* It must crash because of deep recursion. */
 void
 huge_sorted_test()
 {
@@ -97,6 +98,7 @@ huge_sorted_test()
 int
 main()
 {
-    huge_sorted_test();
+    basic_test();
+    /* huge_sorted_test(); */
     return 0;
 }
